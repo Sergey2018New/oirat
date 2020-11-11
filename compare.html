@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Сравнение</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="js/lozad.min.js"></script>
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <script type="text/javascript">
+    if (getInternetExplorerVersion() !== -1) {
+      var script = document.createElement("script");
+      script.src = "js/intersection-observer.js";
+      script.type = "text/javascript";
+      document.getElementsByTagName('head')[0].appendChild(script);
+
+      var scriptPolifill = document.createElement("script");
+      scriptPolifill.src = "js/IE-polifill.js";
+      scriptPolifill.type = "text/javascript";
+      document.getElementsByTagName('head')[0].appendChild(scriptPolifill);
+    } else {
+      document.addEventListener("DOMContentLoaded", function() {
+        var observer = lozad('.lazy');
+        observer.observe();
+      });
+    }
+
+    function getInternetExplorerVersion() {
+      var rv = -1;
+      if (navigator.appName == 'Microsoft Internet Explorer') {
+        var ua = navigator.userAgent;
+        var re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+        if (re.exec(ua) != null)
+          rv = parseFloat(RegExp.$1);
+      } else if (navigator.appName == 'Netscape') {
+        var ua = navigator.userAgent;
+        var re = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
+        if (re.exec(ua) != null)
+          rv = parseFloat(RegExp.$1);
+      }
+      return rv;
+    }
+  </script>
+  <div class="wrapper">
+
+    <div class="header-wrapper">
+      <nav class="nav-mobile">
+        <button class="nav-mobile__toggle"><span></span></button>
+        <div class="nav-mobile__content row">
+          <div class="nav-mobile__logo">
+            <a href="#" class="logo"><img class="logo__img" src="img/logo.svg" width="163" height="35" alt=""></a>
+          </div>
+          <div class="nav-mobile__cart">
+            <a href="#" class="nav-mobile__cart-link">
+              <svg class="icon icon-cart">
+                <use xlink:href="img/icons.svg#icon-cart" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__row header__top-row row align-center">
+              <div class="header__logo">
+                <a href="#" class="logo"><img class="logo__img" src="img/logo.svg" width="163" height="35" alt=""></a>
+              </div>
+              <div class="header__city">
+                <div class="select-city header__city-select">
+                  <div class="select-city__button">
+                    <div class="select-city__icon">
+                      <svg class="icon icon-pointer">
+                        <use xlink:href="img/icons.svg#icon-pointer" />
+                      </svg>
+                    </div>
+                    <div class="select-city__name">Санкт-Петербург</div>
+                  </div>
+                </div>
+              </div>
+              <div class="header__social">
+                <ul class="header__social-list social-list">
+                  <li class="social-list__item">
+                    <a href="https://www.facebook.com/salonoirat/" target="_blank" class="social-list__link">
+                      <svg class="icon icon-facebook">
+                        <use xlink:href="img/icons.svg#icon-facebook" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="https://vk.com/salonoirat" target="_blank" class="social-list__link">
+                      <svg class="icon icon-vk">
+                        <use xlink:href="img/icons.svg#icon-vk" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item">
+                    <a href="https://www.instagram.com/oirat_elista/" target="_blank" class="social-list__link">
+                      <svg class="icon icon-instagram">
+                        <use xlink:href="img/icons.svg#icon-instagram" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__search-button">
+                <div class="header__search-toggle">
+                  <svg class="icon icon-search">
+                    <use xlink:href="img/icons.svg#icon-search" />
+                  </svg>
+                </div>
+              </div>
+              <div class="header__search">
+                <div class="header__search-content">
+                  <form action="#" class="header__search-form search-form" id="form_search">
+                    <div class="search-form__box">
+                      <input type="text" placeholder="Поиск по каталогу" class="search-form__input" required>
+                      <button type="submit" class="search-form__submit">
+                        <svg class="icon icon-search">
+                          <use xlink:href="img/icons.svg#icon-search" />
+                        </svg><span>Поиск</span>
+                      </button>
+                    </div>
+                    <div class="search-form__popup">
+                      <ul class="search-form__list">
+                        <li><a href="#">#Телефоны</a></li>
+                        <li><a href="#">#Смартфоны</a></li>
+                        <li><a href="#">#Ноутбуки</a></li>
+                        <li><a href="#">#Планшеты</a></li>
+                      </ul>
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="header__contacts row align-center">
+                <div class="header__contacts-info">
+                  <div class="header__contacts-phone">
+                    <a href="tel:+79378998000">+7(937) 899 80 00</a>
+                  </div>
+                  <div class="header__contacts-work-time">Работаем <span>с 8:00 до 21:00</span></div>
+                </div>
+                <ul class="header__contacts-messengers messengers-list">
+                  <li class="messengers-list__item">
+                    <a href="viber://add?number=89378998000" class="messengers-list__link" target="_blank">
+                      <svg class="icon icon-viber">
+                        <use xlink:href="img/icons.svg#icon-viber" />
+                      </svg>
+                      <svg class="icon icon-active icon-viber-active">
+                        <use xlink:href="img/icons.svg#icon-viber-active" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="messengers-list__item">
+                    <a href="tg://resolve?domain=@OiratBot" class="messengers-list__link" target="_blank">
+                      <svg class="icon icon-telegram">
+                        <use xlink:href="img/icons.svg#icon-telegram" />
+                      </svg>
+                      <svg class="icon icon-active icon-telegram-active">
+                        <use xlink:href="img/icons.svg#icon-telegram-active" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="messengers-list__item">
+                    <a href="https://wa.me/89378998000" class="messengers-list__link" target="_blank">
+                      <svg class="icon icon-whatsapp">
+                        <use xlink:href="img/icons.svg#icon-whatsapp" />
+                      </svg>
+                      <svg class="icon icon-active icon-whatsapp-active">
+                        <use xlink:href="img/icons.svg#icon-whatsapp-active" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__group-buttons row">
+                <div class="group-button group-button--compare">
+                  <a href="#" class="group-button__link">
+                    <div class="group-button__icon">
+                      <svg class="icon icon-compare">
+                        <use xlink:href="img/icons.svg#icon-compare" />
+                      </svg>
+                    </div>
+                    <div class="group-button__text">
+                      <span>Сравнение</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="group-button group-button--favorites">
+
+                  <a href="#" class="group-button__link">
+                    <div class="group-button__icon">
+                      <svg class="icon icon-heart">
+                        <use xlink:href="img/icons.svg#icon-heart" />
+                      </svg>
+                    </div>
+                    <div class="group-button__text">
+                      <span>Избранное</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="group-button group-button--cart">
+                  <a href="#" class="group-button__link">
+                    <div class="group-button__icon">
+                      <svg class="icon icon-cart">
+                        <use xlink:href="img/icons.svg#icon-cart" />
+                      </svg>
+                    </div>
+                    <div class="group-button__text">
+                      <span>Корзина</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="header__mobile-menu">
+                <!-- Основное меню -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__bottom-inner">
+              <div class="header__row header__bottom-row row">
+                <div class="header__catalog header-catalog">
+                  <div class="header__catalog-button">
+                    <div class="header__catalog-icon">
+                      <svg class="icon icon-catalog">
+                        <use xlink:href="img/icons.svg#icon-catalog" />
+                      </svg>
+                      <svg class="icon icon-arrow-down">
+                        <use xlink:href="img/icons.svg#icon-arrow-down" />
+                      </svg>
+                    </div>
+                    <span>Каталог товаров (4 854)</span>
+                  </div>
+                  <div class="header__catalog-popover">
+                    <div class="header__catalog-back">
+                      <div class="header__catalog-back-button">
+                        <svg class="icon icon-arrow-down">
+                          <use xlink:href="img/icons.svg#icon-arrow-down" />
+                        </svg>
+                        <span>Назад</span>
+                      </div>
+
+                    </div>
+                    <div class="header__catalog-menu catalog-menu">
+                      <div class="catalog-menu__item">
+                        <a href="#" class="catalog-menu__item-link">
+                          <div class="catalog-menu__item-img"><img class="lazy" data-src="img/header-catalog/phones.png" data-srcset="img/header-catalog/phones@2x.png" alt=""></div>
+                          <div class="catalog-menu__item-title">Телефоны</div>
+                        </a>
+                        <div class="catalog-menu__submenu">
+                          <div class="catalog-menu__submenu-title">
+                            Телефоны
+                          </div>
+                          <div class="catalog-menu__submenu-row">
+                            <div class="catalog-menu__submenu-column">
+                              <div class="catalog-menu__submenu-subtitle">
+                                <a href="#">Подраздел 1</a>
+                              </div>
+                              <ul class="catalog-menu__submenu-list">
+                                <li><a href="#">Фитнес-браслеты</a></li>
+                                <li><a href="#">Xiaomi Mi Band</a></li>
+                              </ul>
+                              <div class="catalog-menu__submenu-subtitle">
+                                <a href="#">Подраздел 2</a>
+                              </div>
+                              <ul class="catalog-menu__submenu-list">
+                                <li><a href="#">Детские умные часы</a></li>
+                                <li><a href="#">Умные часы</a></li>
+                                <li><a href="#">Apple Watch</a></li>
+                              </ul>
+                              <div class="catalog-menu__submenu-subtitle">
+                                <a href="#">Подраздел 3 без меню</a>
+                              </div>
+                            </div>
+                            <div class="catalog-menu__submenu-column">
+                              <div class="catalog-menu__submenu-subtitle">
+                                <a href="#">Подраздел 4</a>
+                              </div>
+                              <ul class="catalog-menu__submenu-list">
+                                <li><a href="#">Детские умные часы</a></li>
+                                <li><a href="#">Умные часы</a></li>
+                                <li><a href="#">Apple Watch</a></li>
+                                <li><a href="#">Все умные часы</a></li>
+                                <li><a href="#">Умный дом</a></li>
+                                <li><a href="#">Фитнес-браслеты</a></li>
+                                <li><a href="#">Xiaomi Mi Band</a></li>
+                                <li><a href="#">Все фитнес-браслеты</a></li>
+                              </ul>
+                            </div>
+                            <div class="catalog-menu__submenu-column">
+                              <div class="catalog-menu__submenu-subtitle">
+                                <a href="#">Подраздел 5</a>
+                              </div>
+                              <ul class="catalog-menu__submenu-list">
+                                <li><a href="#">Детские умные часы</a></li>
+                                <li><a href="#">Умные часы</a></li>
+                                <li><a href="#">Apple Watch</a></li>
+                                <li><a href="#">Все умные часы</a></li>
+                                <li><a href="#">Умный дом</a></li>
+                                <li><a href="#">Фитнес-браслеты</a></li>
+                                <li><a href="#">Xiaomi Mi Band</a></li>
+                                <li><a href="#">Все фитнес-браслеты</a></li>
+                              </ul>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item">
+                        <a href="#" class="catalog-menu__item-link">
+                          <div class="catalog-menu__item-img"><img class="lazy" data-src="img/header-catalog/gadgets.png" data-srcset="img/header-catalog/gadgets@2x.png" alt=""></div>
+                          <div class="catalog-menu__item-title">Гаджеты и умные часы</div>
+                        </a>
+                        <div class="catalog-menu__submenu">
+                          <div class="catalog-menu__submenu-title">
+                            Гаджеты и умные часы
+                          </div>
+                          <ul class="catalog-menu__submenu-list">
+                            <li><a href="#">Детские умные часы</a></li>
+                            <li><a href="#">Умные часы</a></li>
+                            <li><a href="#">Apple Watch</a></li>
+                            <li><a href="#">Все умные часы</a></li>
+                            <li><a href="#">Умный дом</a></li>
+                            <li><a href="#">Фитнес-браслеты</a></li>
+                            <li><a href="#">Xiaomi Mi Band</a></li>
+                            <li><a href="#">Все фитнес-браслеты</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item">
+                        <a href="#" class="catalog-menu__item-link">
+                          <div class="catalog-menu__item-img"><img class="lazy" data-src="img/header-catalog/tablets.png" data-srcset="img/header-catalog/tablets@2x.png" alt=""></div>
+                          <div class="catalog-menu__item-title">Планшеты/Ноутбуки</div>
+                        </a>
+                        <div class="catalog-menu__submenu">
+                          <div class="catalog-menu__submenu-title">
+                            Планшеты/Ноутбуки
+                          </div>
+                          <ul class="catalog-menu__submenu-list">
+                            <li><a href="#">Детские умные часы</a></li>
+                            <li><a href="#">Умные часы</a></li>
+                            <li><a href="#">Apple Watch</a></li>
+                            <li><a href="#">Все умные часы</a></li>
+                            <li><a href="#">Умный дом</a></li>
+                            <li><a href="#">Фитнес-браслеты</a></li>
+                            <li><a href="#">Xiaomi Mi Band</a></li>
+                            <li><a href="#">Все фитнес-браслеты</a></li>
+                            <li><a href="#">Детские умные часы</a></li>
+                            <li><a href="#">Умные часы</a></li>
+                            <li><a href="#">Apple Watch</a></li>
+                            <li><a href="#">Все умные часы</a></li>
+                            <li><a href="#">Умный дом</a></li>
+                            <li><a href="#">Фитнес-браслеты</a></li>
+                            <li><a href="#">Xiaomi Mi Band</a></li>
+                            <li><a href="#">Все фитнес-браслеты</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item">
+                        <a href="#" class="catalog-menu__item-link">
+                          <div class="catalog-menu__item-img"><img class="lazy" data-src="img/header-catalog/technics.png" data-srcset="img/header-catalog/technics@2x.png" alt=""></div>
+                          <div class="catalog-menu__item-title">Цифровая и портативная техника</div>
+                        </a>
+                        <div class="catalog-menu__submenu">
+                          <div class="catalog-menu__submenu-title">
+                            Цифровая и портативная техника
+                          </div>
+                          <ul class="catalog-menu__submenu-list">
+                            <li><a href="#">Детские умные часы</a></li>
+                            <li><a href="#">Умные часы</a></li>
+                            <li><a href="#">Apple Watch</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item">
+                        <a href="#" class="catalog-menu__item-link">
+                          <div class="catalog-menu__item-img"><img class="lazy" data-src="img/header-catalog/accessories.png" data-srcset="img/header-catalog/accessories@2x.png" alt=""></div>
+                          <div class="catalog-menu__item-title">Аксессуары</div>
+                        </a>
+                        <div class="catalog-menu__submenu">
+                          <div class="catalog-menu__submenu-title">
+                            Аксессуары
+                          </div>
+                          <ul class="catalog-menu__submenu-list">
+                            <li><a href="#">Детские умные часы</a></li>
+                            <li><a href="#">Умные часы</a></li>
+                            <li><a href="#">Apple Watch</a></li>
+                            <li><a href="#">Все умные часы</a></li>
+                            <li><a href="#">Умный дом</a></li>
+                            <li><a href="#">Фитнес-браслеты</a></li>
+                            <li><a href="#">Xiaomi Mi Band</a></li>
+                            <li><a href="#">Все фитнес-браслеты</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="catalog-menu__item">
+                        <a href="#" class="catalog-menu__item-link">
+                          <div class="catalog-menu__item-img"><img class="lazy" data-src="img/header-catalog/electric-transport.png" data-srcset="img/header-catalog/electric-transport@2x.png" alt=""></div>
+                          <div class="catalog-menu__item-title">Электротранспорт</div>
+                        </a>
+                        <div class="catalog-menu__submenu">
+                          <div class="catalog-menu__submenu-title">
+                            Электротранспорт
+                          </div>
+                          <ul class="catalog-menu__submenu-list">
+                            <li><a href="#">Детские умные часы</a></li>
+                            <li><a href="#">Умные часы</a></li>
+                            <li><a href="#">Apple Watch</a></li>
+                            <li><a href="#">Все умные часы</a></li>
+                            <li><a href="#">Умный дом</a></li>
+                            <li><a href="#">Фитнес-браслеты</a></li>
+                            <li><a href="#">Xiaomi Mi Band</a></li>
+                            <li><a href="#">Все фитнес-браслеты</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="header__menu">
+                  <ul class="menu">
+                    <li class="menu__item menu__item--promotions"><a href="#" class="menu__link"><span><span>Акции</span></span></a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><span><span>Трейд&#8209;Ин</span></span></a></li>
+                    <li class="menu__item"><a target="_blank" href="https://oiratservice.ru/" class="menu__link"><span><span>Сервисный центр</span></span></a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><span><span>Сим&#8209;карты</span></span></a></li>
+                    <li class="menu__item"><a target="_blank" href="http://xiaomielista.ru" class="menu__link"><span><span>Xiaomi</span></span></a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><span><span>Наши магазины</span></span></a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><span><span>Работа в «Ойрате»</span></span></a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><span><span>Партнёрам</span></span></a></li>
+                    <li class="menu__item"><a href="#" class="menu__link"><span><span>Связаться с нами</span></span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+
+
+    <div class="page-content">
+      <div class="content">
+        <div class="container">
+          <div class="breadcrumb">
+            <ul class="breadcrumb__list">
+              <li><a href="#">Главная</a></li>
+              <li class="active">Сравнение</li>
+            </ul>
+          </div>
+          <div class="content-page">
+            <div class="heading">
+              <div class="heading__title">
+                <h1>Сравнение товаров</h1>
+              </div>
+            </div>
+            <div class="compare">
+              <div class="compare__box row">
+                <div class="compare__aside">
+                  <div class="compare__parameters compare-parameters">
+                    <div class="compare-parameters__title">
+                      Для категории:
+                    </div>
+                    <div class="compare-parameters__content">
+                      <div class="compare-parameters__category">
+                        <select class="select">
+                          <option value="0">Смартфоны и мобильные товары</option>
+                          <option value="1">Планшеты</option>
+                          <option value="2">Аксессуары</option>
+                        </select>
+                      </div>
+                      <div class="compare-parameters__checkboxes">
+                        <div class="form-checkbox">
+                          <label class="checkbox checkbox--radio" for="parameters_1">
+                            <input type="radio" name="parameters" id="parameters_1" class="checkbox__input" checked>
+                            <span class="checkbox__icon"></span>
+                            <span class="checkbox__text">Все параметры</span>
+                          </label>
+                        </div>
+                        <div class="form-checkbox">
+                          <label class="checkbox checkbox--radio" for="parameters_2">
+                            <input type="radio" name="parameters" id="parameters_2" class="checkbox__input">
+                            <span class="checkbox__icon"></span>
+                            <span class="checkbox__text">Различающиеся</span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="compare__headers compare-headers">
+                    <div class="compare-headers__block">
+                      <div class="compare-headers__title">
+                        Связь
+                      </div>
+                      <div class="compare-headers__characteristic">
+                        <div>Диапазоны GSM</div>
+                        <div>Диапазоны UMTS</div>
+                        <div>Диапазоны LTE</div>
+                        <div>Доступ в Интернет</div>
+                        <div>Bluetooth</div>
+                        <div>Wi-Fi (802.11)</div>
+                        <div>NFC</div>
+                        <div>Разъем для синхронизации</div>
+                      </div>
+                    </div>
+                    <div class="compare-headers__block">
+                      <div class="compare-headers__title">
+                        Дисплей
+                      </div>
+                      <div class="compare-headers__characteristic">
+                        <div>Тип дисплея</div>
+                        <div>Диагональ дисплея (дюйм)</div>
+                        <div>Разрешение дисплея (пикс)</div>
+                        <div>Плотность пикселей (PPI)</div>
+                        <div>Количество цветов дисплея</div>
+                      </div>
+                    </div>
+                    <div class="compare-headers__block">
+                      <div class="compare-headers__title">
+                        Связь
+                      </div>
+                      <div class="compare-headers__characteristic">
+                        <div>Диапазоны GSM</div>
+                        <div>Диапазоны UMTS</div>
+                        <div>Диапазоны LTE</div>
+                        <div>Доступ в Интернет</div>
+                        <div>Bluetooth</div>
+                        <div>Wi-Fi (802.11)</div>
+                        <div>NFC</div>
+                        <div>Разъем для синхронизации</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="compare__content">
+                  <div class="compare__products">
+                    <div class="compare__products-goods">
+                      <div class="compare__products-inner">
+                        <div class="compare__products-carousel" id="compare_carousel_1">
+                          <div>
+                            <div class="compare-product">
+                              <div class="compare-product__product">
+                                <div class="compare-product__product-inner">
+                                  <div class="product product--simple">
+                                    <div class="product__image">
+                                      <div class="product__image-wrapper">
+                                        <a href="#" class="product__image-link">
+
+                                          <div class="product__image-photo">
+                                            <img class="lazy" data-src="img/products/product_01.jpg" data-srscet="img/products/product_01@2x.jpg 2x" alt="">
+                                          </div>
+
+
+
+                                        </a>
+                                      </div>
+
+
+                                    </div>
+                                    <div class="product__content">
+                                      <div class="product__content-top">
+                                        <div class="product__title">
+                                          <a href="#">Samsung Galaxy S20 (серый)</a>
+                                        </div>
+                                        <div class="product__rating rating">
+                                          <div class="rating__score">4.7</div>
+                                          <div class="rating__flowers flowers">
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower"></i>
+                                          </div>
+                                          <div class="rating__count-reviews">17 отзывов</div>
+                                        </div>
+                                      </div>
+                                      <div class="product__content-bottom">
+                                        <div class="product__price-block">
+                                          <div class="product__price price">
+                                            <span>69 900</span> <span class="rouble">p</span>
+                                          </div>
+
+                                          <div class="product__price product__price--old price price--old">
+                                            <span>54 900</span>
+                                          </div>
+
+                                        </div>
+                                        <div class="product__buy">
+                                          <a href="javascript:void(0)" class="btn-cart product__buy-cart js-add-cart"><svg class="icon icon-cart">
+                                              <use xlink:href="img/icons.svg#icon-cart" />
+                                            </svg><svg class="icon icon-check">
+                                              <use xlink:href="img/icons.svg#icon-check" />
+                                            </svg></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product__remove"><span></span></div>
+
+
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="compare-product">
+                              <div class="compare-product__product">
+                                <div class="compare-product__product-inner">
+                                  <div class="product product--simple">
+                                    <div class="product__image">
+                                      <div class="product__image-wrapper">
+                                        <a href="#" class="product__image-link">
+
+
+                                          <div class="product__image-photo">
+                                            <img class="lazy" data-src="img/products/product_02.jpg" data-srscet="img/products/product_02@2x.jpg 2x" alt="">
+                                          </div>
+
+
+                                        </a>
+                                      </div>
+
+
+                                    </div>
+                                    <div class="product__content">
+                                      <div class="product__content-top">
+                                        <div class="product__title">
+                                          <a href="#">Apple iPhone 11 Pro 64GB (темно-зеленый)</a>
+                                        </div>
+                                        <div class="product__rating rating">
+                                          <div class="rating__score">4.7</div>
+                                          <div class="rating__flowers flowers">
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower"></i>
+                                          </div>
+                                          <div class="rating__count-reviews">17 отзывов</div>
+                                        </div>
+                                      </div>
+                                      <div class="product__content-bottom">
+                                        <div class="product__price-block">
+                                          <div class="product__price price">
+                                            <span>21 999</span> <span class="rouble">p</span>
+                                          </div>
+
+                                          <div class="product__price product__price--old price price--old">
+                                            <span>21 999</span>
+                                          </div>
+
+                                        </div>
+                                        <div class="product__buy">
+                                          <a href="javascript:void(0)" class="btn-cart product__buy-cart js-add-cart"><svg class="icon icon-cart">
+                                              <use xlink:href="img/icons.svg#icon-cart" />
+                                            </svg><svg class="icon icon-check">
+                                              <use xlink:href="img/icons.svg#icon-check" />
+                                            </svg></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product__remove"><span></span></div>
+
+
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="compare-product">
+                              <div class="compare-product__product">
+                                <div class="compare-product__product-inner">
+                                  <div class="product product--simple">
+                                    <div class="product__image">
+                                      <div class="product__image-wrapper">
+                                        <a href="#" class="product__image-link">
+
+
+
+                                          <div class="product__image-photo">
+                                            <img class="lazy" data-src="img/products/product_03.jpg" data-srscet="img/products/product_03@2x.jpg 2x" alt="">
+                                          </div>
+
+                                        </a>
+                                      </div>
+
+
+                                    </div>
+                                    <div class="product__content">
+                                      <div class="product__content-top">
+                                        <div class="product__title">
+                                          <a href="#">Samsung Galaxy S20 (темно- зеленый)</a>
+                                        </div>
+                                        <div class="product__rating rating">
+                                          <div class="rating__score">4.7</div>
+                                          <div class="rating__flowers flowers">
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower"></i>
+                                          </div>
+                                          <div class="rating__count-reviews">17 отзывов</div>
+                                        </div>
+                                      </div>
+                                      <div class="product__content-bottom">
+                                        <div class="product__price-block">
+                                          <div class="product__price price">
+                                            <span>69 900</span> <span class="rouble">p</span>
+                                          </div>
+
+                                          <div class="product__price product__price--old price price--old">
+                                            <span>121 999</span>
+                                          </div>
+
+                                        </div>
+                                        <div class="product__buy">
+                                          <a href="javascript:void(0)" class="btn-cart product__buy-cart js-add-cart"><svg class="icon icon-cart">
+                                              <use xlink:href="img/icons.svg#icon-cart" />
+                                            </svg><svg class="icon icon-check">
+                                              <use xlink:href="img/icons.svg#icon-check" />
+                                            </svg></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product__remove"><span></span></div>
+
+
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="compare-product">
+                              <div class="compare-product__product">
+                                <div class="compare-product__product-inner">
+                                  <div class="product product--simple">
+                                    <div class="product__image">
+                                      <div class="product__image-wrapper">
+                                        <a href="#" class="product__image-link">
+
+                                          <div class="product__image-photo">
+                                            <img class="lazy" data-src="img/products/product_01.jpg" data-srscet="img/products/product_01@2x.jpg 2x" alt="">
+                                          </div>
+
+
+
+                                        </a>
+                                      </div>
+
+
+                                    </div>
+                                    <div class="product__content">
+                                      <div class="product__content-top">
+                                        <div class="product__title">
+                                          <a href="#">Samsung Galaxy S20 (серый)</a>
+                                        </div>
+                                        <div class="product__rating rating">
+                                          <div class="rating__score">4.7</div>
+                                          <div class="rating__flowers flowers">
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower"></i>
+                                          </div>
+                                          <div class="rating__count-reviews">17 отзывов</div>
+                                        </div>
+                                      </div>
+                                      <div class="product__content-bottom">
+                                        <div class="product__price-block">
+                                          <div class="product__price price">
+                                            <span>69 900</span> <span class="rouble">p</span>
+                                          </div>
+
+                                          <div class="product__price product__price--old price price--old">
+                                            <span>54 900</span>
+                                          </div>
+
+                                        </div>
+                                        <div class="product__buy">
+                                          <a href="javascript:void(0)" class="btn-cart product__buy-cart js-add-cart"><svg class="icon icon-cart">
+                                              <use xlink:href="img/icons.svg#icon-cart" />
+                                            </svg><svg class="icon icon-check">
+                                              <use xlink:href="img/icons.svg#icon-check" />
+                                            </svg></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product__remove"><span></span></div>
+
+
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="compare-product">
+                              <div class="compare-product__product">
+                                <div class="compare-product__product-inner">
+                                  <div class="product product--simple">
+                                    <div class="product__image">
+                                      <div class="product__image-wrapper">
+                                        <a href="#" class="product__image-link">
+
+
+                                          <div class="product__image-photo">
+                                            <img class="lazy" data-src="img/products/product_02.jpg" data-srscet="img/products/product_02@2x.jpg 2x" alt="">
+                                          </div>
+
+
+                                        </a>
+                                      </div>
+
+
+                                    </div>
+                                    <div class="product__content">
+                                      <div class="product__content-top">
+                                        <div class="product__title">
+                                          <a href="#">Apple iPhone 11 Pro 64GB (темно-зеленый)</a>
+                                        </div>
+                                        <div class="product__rating rating">
+                                          <div class="rating__score">4.7</div>
+                                          <div class="rating__flowers flowers">
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower"></i>
+                                          </div>
+                                          <div class="rating__count-reviews">17 отзывов</div>
+                                        </div>
+                                      </div>
+                                      <div class="product__content-bottom">
+                                        <div class="product__price-block">
+                                          <div class="product__price price">
+                                            <span>21 999</span> <span class="rouble">p</span>
+                                          </div>
+
+                                          <div class="product__price product__price--old price price--old">
+                                            <span>21 999</span>
+                                          </div>
+
+                                        </div>
+                                        <div class="product__buy">
+                                          <a href="javascript:void(0)" class="btn-cart product__buy-cart js-add-cart"><svg class="icon icon-cart">
+                                              <use xlink:href="img/icons.svg#icon-cart" />
+                                            </svg><svg class="icon icon-check">
+                                              <use xlink:href="img/icons.svg#icon-check" />
+                                            </svg></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product__remove"><span></span></div>
+
+
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="compare-product">
+                              <div class="compare-product__product">
+                                <div class="compare-product__product-inner">
+                                  <div class="product product--simple">
+                                    <div class="product__image">
+                                      <div class="product__image-wrapper">
+                                        <a href="#" class="product__image-link">
+
+
+
+                                          <div class="product__image-photo">
+                                            <img class="lazy" data-src="img/products/product_03.jpg" data-srscet="img/products/product_03@2x.jpg 2x" alt="">
+                                          </div>
+
+                                        </a>
+                                      </div>
+
+
+                                    </div>
+                                    <div class="product__content">
+                                      <div class="product__content-top">
+                                        <div class="product__title">
+                                          <a href="#">Samsung Galaxy S20 (темно- зеленый)</a>
+                                        </div>
+                                        <div class="product__rating rating">
+                                          <div class="rating__score">4.7</div>
+                                          <div class="rating__flowers flowers">
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower-active"></i>
+                                            <i class="icon icon-flower"></i>
+                                          </div>
+                                          <div class="rating__count-reviews">17 отзывов</div>
+                                        </div>
+                                      </div>
+                                      <div class="product__content-bottom">
+                                        <div class="product__price-block">
+                                          <div class="product__price price">
+                                            <span>69 900</span> <span class="rouble">p</span>
+                                          </div>
+
+                                          <div class="product__price product__price--old price price--old">
+                                            <span>121 999</span>
+                                          </div>
+
+                                        </div>
+                                        <div class="product__buy">
+                                          <a href="javascript:void(0)" class="btn-cart product__buy-cart js-add-cart"><svg class="icon icon-cart">
+                                              <use xlink:href="img/icons.svg#icon-cart" />
+                                            </svg><svg class="icon icon-check">
+                                              <use xlink:href="img/icons.svg#icon-check" />
+                                            </svg></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product__remove"><span></span></div>
+
+
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="compare__products-characteristics">
+                      <div class="compare__products-inner">
+                        <div class="compare__products-carousel" id="compare_carousel_2">
+                          <div>
+                            <div class="compare-product">
+                              <div class="compare-product__characteristics">
+                                <div class="compare-product__block">
+                                  <div>2G (GPRS/EDGE)</div>
+                                  <div>3G (WCDMA/UMTS/HSPA)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>5,0</div>
+                                  <div>Wi-Fi</div>
+                                  <div>Есть</div>
+                                  <div>Есть</div>
+                                </div>
+                                <div class="compare-product__block">
+                                  <div>Super AMOLED</div>
+                                  <div>6,3</div>
+                                  <div>2340 x 1080</div>
+                                  <div>57675435 точек на дюйм</div>
+                                  <div>1 000 000 000 000</div>
+                                </div>
+                                <div class="compare-product__block">
+                                  <div>2G (GPRS/EDGE)</div>
+                                  <div>3G (WCDMA/UMTS/HSPA)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>5,0</div>
+                                  <div>Wi-Fi</div>
+                                  <div>Есть</div>
+                                  <div>Есть</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="compare-product">
+                              <div class="compare-product__characteristics">
+                                <div class="compare-product__block">
+                                  <div>2G (GPRS/EDGE)</div>
+                                  <div>3G (WCDMA/UMTS/HSPA)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>5,0</div>
+                                  <div>Wi-Fi</div>
+                                  <div>Есть</div>
+                                  <div>Есть</div>
+                                </div>
+                                <div class="compare-product__block">
+                                  <div>Super AMOLED</div>
+                                  <div>6,3</div>
+                                  <div>2340 x 1080</div>
+                                  <div>57675435 точек на дюйм</div>
+                                  <div>1 000 000 000 000</div>
+                                </div>
+                                <div class="compare-product__block">
+                                  <div>2G (GPRS/EDGE)</div>
+                                  <div>3G (WCDMA/UMTS/HSPA)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>5,0</div>
+                                  <div>Wi-Fi</div>
+                                  <div>Есть</div>
+                                  <div>Есть</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="compare-product">
+                              <div class="compare-product__characteristics">
+                                <div class="compare-product__block">
+                                  <div>2G (GPRS/EDGE)</div>
+                                  <div>3G (WCDMA/UMTS/HSPA)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>5,0</div>
+                                  <div>Wi-Fi</div>
+                                  <div>Есть</div>
+                                  <div>Есть</div>
+                                </div>
+                                <div class="compare-product__block">
+                                  <div>Super AMOLED</div>
+                                  <div>6,3</div>
+                                  <div>2340 x 1080</div>
+                                  <div>57675435 точек на дюйм</div>
+                                  <div>1 000 000 000 000</div>
+                                </div>
+                                <div class="compare-product__block">
+                                  <div>2G (GPRS/EDGE)</div>
+                                  <div>3G (WCDMA/UMTS/HSPA)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>5,0</div>
+                                  <div>Wi-Fi</div>
+                                  <div>Есть</div>
+                                  <div>Есть</div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                          <div>
+                            <div class="compare-product">
+                              <div class="compare-product__characteristics">
+                                <div class="compare-product__block">
+                                  <div>2G (GPRS/EDGE)</div>
+                                  <div>3G (WCDMA/UMTS/HSPA)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>5,0</div>
+                                  <div>Wi-Fi</div>
+                                  <div>Есть</div>
+                                  <div>Есть</div>
+                                </div>
+                                <div class="compare-product__block">
+                                  <div>Super AMOLED</div>
+                                  <div>6,3</div>
+                                  <div>2340 x 1080</div>
+                                  <div>57675435 точек на дюйм</div>
+                                  <div>1 000 000 000 000</div>
+                                </div>
+                                <div class="compare-product__block">
+                                  <div>2G (GPRS/EDGE)</div>
+                                  <div>3G (WCDMA/UMTS/HSPA)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>5,0</div>
+                                  <div>Wi-Fi</div>
+                                  <div>Есть</div>
+                                  <div>Есть</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="compare-product">
+                              <div class="compare-product__characteristics">
+                                <div class="compare-product__block">
+                                  <div>2G (GPRS/EDGE)</div>
+                                  <div>3G (WCDMA/UMTS/HSPA)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>5,0</div>
+                                  <div>Wi-Fi</div>
+                                  <div>Есть</div>
+                                  <div>Есть</div>
+                                </div>
+                                <div class="compare-product__block">
+                                  <div>Super AMOLED</div>
+                                  <div>6,3</div>
+                                  <div>2340 x 1080</div>
+                                  <div>57675435 точек на дюйм</div>
+                                  <div>1 000 000 000 000</div>
+                                </div>
+                                <div class="compare-product__block">
+                                  <div>2G (GPRS/EDGE)</div>
+                                  <div>3G (WCDMA/UMTS/HSPA)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>5,0</div>
+                                  <div>Wi-Fi</div>
+                                  <div>Есть</div>
+                                  <div>Есть</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="compare-product">
+                              <div class="compare-product__characteristics">
+                                <div class="compare-product__block">
+                                  <div>2G (GPRS/EDGE)</div>
+                                  <div>3G (WCDMA/UMTS/HSPA)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>5,0</div>
+                                  <div>Wi-Fi</div>
+                                  <div>Есть</div>
+                                  <div>Есть</div>
+                                </div>
+                                <div class="compare-product__block">
+                                  <div>Super AMOLED</div>
+                                  <div>6,3</div>
+                                  <div>2340 x 1080</div>
+                                  <div>57675435 точек на дюйм</div>
+                                  <div>1 000 000 000 000</div>
+                                </div>
+                                <div class="compare-product__block">
+                                  <div>2G (GPRS/EDGE)</div>
+                                  <div>3G (WCDMA/UMTS/HSPA)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>4G (LTE)</div>
+                                  <div>5,0</div>
+                                  <div>Wi-Fi</div>
+                                  <div>Есть</div>
+                                  <div>Есть</div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="compare__products compare__products--characteristics">
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__top-row row">
+            <div class="footer__top-left">
+              <div class="footer__title">
+                Подпишитесь на обновления
+              </div>
+              <div class="footer__subscription">
+                <form action="#" class="footer-form-subscription" id="form_subsciption_bottom">
+                  <input type="email" class="footer-form-subscription__input form-control" placeholder="example@mail.com" required>
+                  <button type="submit" class="footer-form-subscription__submit">
+                    <svg class="icon icon-arrow">
+                      <use xlink:href="img/icons.svg#icon-arrow" />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <div class="footer__contacts footer__contacts--desktop">
+                <div class="footer__contacts-phone">
+                  <a href="tel:89378998000">8 (937) 899 80 00</a>
+                </div>
+                <div class="footer__contacts-work-time">График работы колл-центра: с 9:00 до 19:00 без перерыва и выходных</div>
+              </div>
+            </div>
+            <div class="footer__top-right">
+              <div class="footer__menu">
+                <div class="footer__menu-row row">
+                  <div class="footer__menu-column footer__menu-column--1">
+                    <div class="footer__title footer__menu-title">
+                      <span>Каталог товаров</span>
+                      <svg class="icon icon-arrow-down">
+                        <use xlink:href="img/icons.svg#icon-arrow-down" />
+                      </svg>
+                    </div>
+                    <div class="footer__menu-content">
+                      <ul class="footer__menu-list">
+                        <li><a href="#">Мобильные телефоны</a></li>
+                        <li><a href="#">Планшеты и ноутбуки</a></li>
+                        <li><a href="#">Цифровая и портативная техника</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                        <li><a href="#">Гаджеты и умные часы</a></li>
+                        <li><a href="#">Электротранспорт</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer__menu-column footer__menu-column--2">
+                    <div class="footer__title footer__menu-title">
+                      <span>Покупателю</span>
+                      <svg class="icon icon-arrow-down">
+                        <use xlink:href="img/icons.svg#icon-arrow-down" />
+                      </svg>
+                    </div>
+                    <div class="footer__menu-content">
+                      <ul class="footer__menu-list">
+                        <li><a href="#">Бесплатная доставка</a></li>
+                        <li><a href="#">Сервисный центр</a></li>
+                        <li><a href="#">Программа лояльности</a></li>
+                        <li><a href="#">Обмен и возврат</a></li>
+                        <li><a href="#">Рассрочка</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer__menu-column footer__menu-column--3">
+                    <div class="footer__title footer__menu-title">
+                      <span>Информация</span>
+                      <svg class="icon icon-arrow-down">
+                        <use xlink:href="img/icons.svg#icon-arrow-down" />
+                      </svg>
+                    </div>
+                    <div class="footer__menu-content">
+                      <ul class="footer__menu-list">
+                        <li><a href="#">Трейд-Ин</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Наши магазины</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Услуги</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="footer__menu-column footer__menu-column--4">
+                    <div class="footer__title footer__menu-title">
+                      <span>Магазин</span>
+                      <svg class="icon icon-arrow-down">
+                        <use xlink:href="img/icons.svg#icon-arrow-down" />
+                      </svg>
+                    </div>
+                    <div class="footer__menu-content">
+                      <ul class="footer__menu-list">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Избранное</a></li>
+                        <li><a href="#">Сравнение</a></li>
+                        <li><a href="#">Корзина товаров</a></li>
+                        <li><a href="#modal_entry" rel="modal:open">Личный кабинет</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__contacts footer__contacts--mobile">
+                <div class="footer__contacts-phone">
+                  <a href="tel:89378998000">8 (937) 899 80 00</a>
+                </div>
+                <div class="footer__contacts-work-time">График работы колл-центра: с 9:00 до 19:00 без перерыва и выходных</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__bottom-row row justify-between">
+            <div class="footer__bottom-left">
+              <div class="footer__address">Адрес: Элиста, ул. ленина, 253, Стр.1</div>
+              <div class="footer__copyright">© 2020 - Oirat. Интернет-магазин электроники</div>
+            </div>
+            <div class="footer__bottom-right">
+              <div class="footer__politics">
+                <a href="sources/pdf.pdf" target="_blank">Политика конфиденциальности</a>
+              </div>
+              <div class="footer__development">Разработано в <a href="https://rusodot.ru/" target="_blank">RUSO</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Модальное окно "Вход в личный кабинет" -->
+  <div id="modal_entry" class="modal modal-entry">
+    <div class="modal__design"><img width="512" height="330" class="lazy" data-src="img/design/bg-design-modal-entry.png" alt=""></div>
+    <div class="modal__content">
+      <div class="modal__title modal__title--center">
+        Вход в личный кабинет
+      </div>
+      <div class="modal__form modal-form modal-form--entry">
+        <form action="#" id="form_entry">
+          <div class="form-group">
+            <input type="text" name="phone" class="form-control mask-phone" minlength="18" placeholder="Телефон" required>
+          </div>
+          <div class="form-group">
+            <input type="password" name="password" class="form-control" placeholder="Пароль" required>
+          </div>
+          <div class="form-group form-buttons row align-center">
+            <button type="submit" class="btn btn--primary btn-submit">Войти в личный кабинет</button>
+            <a href="#modal_registration" class="btn btn--link" rel="modal:open">Регистрация</a>
+          </div>
+          <div class="form-group form-links">
+            <a href="#">Забыли пароль?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно "Создание учетной записи" -->
+  <div id="modal_registration" class="modal modal-registration">
+    <div class="modal__design"><img width="56" height="300" class="lazy" data-src="img/design/bg-design-modal-registration.png" alt=""></div>
+    <div class="modal__content">
+      <div class="modal__title">
+        Создание учетной записи
+      </div>
+      <div class="modal__form modal-form modal-form--registration">
+        <form action="#" id="form_registration">
+          <div class="form-row">
+            <div class="form-column">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
+              </div>
+            </div>
+            <div class="form-column">
+              <div class="form-group">
+                <input type="text" name="surname" class="form-control" placeholder="Фамилия" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-column">
+              <div class="form-group">
+                <input type="text" name="phone" class="form-control mask-phone" minlength="18" placeholder="Телефон" required>
+              </div>
+            </div>
+            <div class="form-column">
+              <div class="form-group">
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-column">
+              <div class="form-group">
+                <input type="password" name="password" class="form-control" id="registration_password" placeholder="Пароль" required>
+              </div>
+            </div>
+            <div class="form-column">
+              <div class="form-group">
+                <input type="password" name="repeat_password" class="form-control" id="registration_repeat_password" placeholder="Повторите пароль" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group form-buttons">
+            <button type="submit" class="btn btn--primary btn-submit">Зарегистрироваться</button>
+          </div>
+          <div class="form-checkbox">
+            <label class="checkbox" for="registration_receive_offers">
+              <input type="checkbox" name="receive_offers" id="registration_receive_offers" class="checkbox__input" checked>
+              <span class="checkbox__icon"><svg class="icon icon-checkbox">
+                  <use xlink:href="img/icons.svg#icon-checkbox" />
+                </svg></span>
+              <span class="checkbox__text">Получать предложения наших партнёров</span>
+            </label>
+          </div>
+          <div class="form-checkbox">
+            <label class="checkbox" for="registration_agreement">
+              <input type="checkbox" name="agreement" id="registration_agreement" class="checkbox__input" checked required>
+              <span class="checkbox__icon"><svg class="icon icon-checkbox">
+                  <use xlink:href="img/icons.svg#icon-checkbox" />
+                </svg></span>
+              <span class="checkbox__text">Я соглашаюсь с условиями и политикой приватности</span>
+            </label>
+          </div>
+          <div class="form-checkbox">
+            <label class="checkbox" for="registration_subscription">
+              <input type="checkbox" name="subscription" id="registration_subscription" class="checkbox__input" checked>
+              <span class="checkbox__icon"><svg class="icon icon-checkbox">
+                  <use xlink:href="img/icons.svg#icon-checkbox" />
+                </svg></span>
+              <span class="checkbox__text">Подписка на нашу рассылку</span>
+              <span class="checkbox__info">Вы можете отписаться в любой момент. Для этого воспользуйтесь нашими контактными данными в юридическом уведомлении.</span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно "Купить в один клик" -->
+  <div id="modal_buy_click" class="modal modal-buy-click">
+    <div class="modal__design"><img width="305" height="236" class="lazy" data-src="img/design/bg-design-modal.png" alt=""></div>
+    <div class="modal__content">
+      <div class="modal__title modal__title--center">
+        Купить “Планшет Huawei T3 LTE 10" 16Gb Grey”
+      </div>
+      <div class="modal__form modal-form modal-form--buy-click">
+        <form action="#" id="form_buy_click">
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="Ваше имя" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="phone" class="form-control mask-phone" minlength="18" placeholder="Телефон" required>
+          </div>
+          <div class="form-group form-buttons">
+            <button type="submit" class="btn btn--primary btn-submit">Купить</button>
+          </div>
+          <div class="form-checkbox">
+            <label class="checkbox" for="buy_click_agreement">
+              <input type="checkbox" name="agreement" id="buy_click_agreement" class="checkbox__input" checked required>
+              <span class="checkbox__icon"><svg class="icon icon-checkbox">
+                  <use xlink:href="img/icons.svg#icon-checkbox" />
+                </svg></span>
+              <span class="checkbox__text">Я согласен на обработку персональных данных, а также с условиями подписки</span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно "Успешно отправлено" -->
+  <div id="modal_success" class="modal modal-success">
+    <div class="modal__content">
+      <div class="modal__icon">
+        <svg class="icon icon-leaf">
+          <use xlink:href="img/icons.svg#icon-leaf" />
+        </svg>
+      </div>
+      <div class="modal__title">
+        Ваш заказ <span>принят</span>
+      </div>
+      <div class="modal__text">
+        В ближайшее время мы свяжемся с вами
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно "Успешно оформлена подписка " -->
+  <div id="modal_success_subscription" class="modal modal-success">
+    <div class="modal__content">
+      <div class="modal__icon">
+        <svg class="icon icon-leaf">
+          <use xlink:href="img/icons.svg#icon-leaf" />
+        </svg>
+      </div>
+      <div class="modal__title">
+        Вы успешно подписались на подписку
+      </div>
+      <div class="modal__text">
+        В ближайшее время мы свяжемся с вами
+      </div>
+    </div>
+  </div>
+
+  <div class="popup-info">
+    <div class="container">
+      <div class="popup-info__row row align-center justify-between">
+        <div class="popup-info__text">
+          Продолжая просматривать этот сайт, вы соглашаетесь на использование cookie файлов
+        </div>
+        <div class="popup-info__button">
+          <button class="popup-info__close btn btn--primary">Хорошо</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+
+</body>
+
+</html>

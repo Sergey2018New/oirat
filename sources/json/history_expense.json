@@ -1,0 +1,68 @@
+{
+	"data":   [
+		{
+			"id": "#556879",
+			"product": "Планшет Huawei T3 LTE 10\" 16Gb Grey 1",
+			"date": "02.09.2020",
+			"sum": "21 999",
+			"withdrawn_bonuses": "17 999",
+			"balance": "220"
+		},
+		{
+			"id": "#556878",
+			"product": "Планшет Huawei T3 LTE 10\" 16Gb Grey 2",
+			"date": "17.08.2020",
+			"sum": "9 999",
+			"withdrawn_bonuses": "21 999",
+			"balance": "230"
+		},
+		{
+			"id": "#556876",
+			"product": "Планшет Huawei T3 LTE 10\" 16Gb Grey 3",
+			"date": "05.07.2020",
+			"sum": "5 999",
+			"withdrawn_bonuses": "12 999",
+			"balance": "108"
+		},
+		{
+			"id": "#556875",
+			"product": "Планшет Huawei T3 LTE 10\" 16Gb Grey 4",
+			"date": "30.06.2020",
+			"sum": "7 999",
+			"withdrawn_bonuses": "8 999",
+			"balance": "106"
+		},
+		{
+			"id": "#556874",
+			"product": "Планшет Huawei T3 LTE 10\" 16Gb Grey 5",
+			"date": "11.06.2020",
+			"sum": "18 999",
+			"withdrawn_bonuses": "20 999",
+			"balance": "105"
+		},
+		{
+			"id": "#556873",
+			"product": "Планшет Huawei T3 LTE 10\" 16Gb Grey 6",
+			"date": "14.04.2020",
+			"sum": "21 999",
+			"withdrawn_bonuses": "15 999",
+			"balance": "111"
+		},
+		{
+			"id": "#556872",
+			"product": "Планшет Huawei T3 LTE 10\" 16Gb Grey 7",
+			"date": "21.12.2019",
+			"sum": "42 999",
+			"withdrawn_bonuses": "30 999",
+			"balance": "400"
+		},
+		{
+			"id": "#556871",
+			"product": "Планшет Huawei T3 LTE 10\" 16Gb Grey 8",
+			"date": "20.07.2019",
+			"sum": "94 999",
+			"withdrawn_bonuses": "25 999",
+			"balance": "250"
+		}
+	]
+}
