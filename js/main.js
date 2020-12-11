@@ -1469,6 +1469,14 @@ $(document).ready(function() {
   }
   
 
+  // Переключение цветов в товаре
+    $(document).on('click', '.product__color-item', function () {
+		var currentIndex = $(this).index();
+      $(this).siblings().removeClass("active");
+      $(this).addClass("active");
+      $(this).closest(".product").find(".product__slider-block").removeClass("active");  
+      $(this).closest(".product").find('.product__slider-block[data-slider-index="' + currentIndex + '"]').addClass("active");
+    });
 
 
 
